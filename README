@@ -1,0 +1,24 @@
++---------------------------------------------------------------------------------+
+|                                                                                 |
+| README                                                                          |
+|                                                                                 |
++---------------------------------------------------------------------------------+
+
+
+[ Presentation ]
+----------------
+VirtualBattle is a battle simulator based on finite state machines. It is 
+programmed in C++ with SDL and OpenGL.
+
+[ Compiling ]
+-------------
+Once the archive unzipped, go into the root directory and type `make'.
+
+[ Running ]
+-----------
+Run the program by typing `./main'.
+
+[ Documentation ]
+-----------------
+For any extra information, please read the documentation. You can generate it 
+by typing `make doc'.

@@ -1,0 +1,143 @@
+obj/team.o: src/team.cpp include/font_manager.h include/font.h \
+ /usr/include/freetype2/ft2build.h \
+ /usr/include/freetype2/freetype/config/ftheader.h \
+ /usr/include/freetype2/freetype/freetype.h \
+ /usr/include/freetype2/freetype/config/ftconfig.h \
+ /usr/include/freetype2/freetype/config/ftoption.h \
+ /usr/include/freetype2/freetype/config/ftstdlib.h \
+ /usr/include/freetype2/freetype/fttypes.h \
+ /usr/include/freetype2/freetype/ftsystem.h \
+ /usr/include/freetype2/freetype/ftimage.h \
+ /usr/include/freetype2/freetype/fterrors.h \
+ /usr/include/freetype2/freetype/ftmoderr.h \
+ /usr/include/freetype2/freetype/fterrdef.h \
+ /usr/include/freetype2/freetype/ftglyph.h \
+ /usr/include/freetype2/freetype/ftoutln.h \
+ /usr/include/freetype2/freetype/fttrigon.h include/types.h \
+ include/color.h include/utils.h include/logger.h include/singleton.h \
+ include/singleton_base.h include/singleton_manager.h include/team.h \
+ include/exceptions.h include/spot.h include/geometry.h include/config.h \
+ include/window.h
+obj/color.o: src/color.cpp include/color.h include/utils.h include/types.h
+obj/tokenizer.o: src/tokenizer.cpp include/tokenizer.h
+obj/software_window.o: src/software_window.cpp include/exceptions.h \
+ include/types.h include/utils.h include/software_window.h \
+ include/window.h include/color.h include/utils.h include/logger.h \
+ include/singleton.h include/singleton_base.h include/singleton_manager.h
+obj/utils.o: src/utils.cpp include/utils.h include/types.h
+obj/global_timer.o: src/global_timer.cpp include/global_timer.h \
+ include/singleton.h include/singleton_base.h include/singleton_manager.h \
+ include/types.h
+obj/logger.o: src/logger.cpp include/exceptions.h include/types.h \
+ include/logger.h include/singleton.h include/singleton_base.h \
+ include/singleton_manager.h include/utils.h include/config.h \
+ include/config.h include/window.h include/color.h include/utils.h \
+ include/logger.h
+obj/application_base.o: src/application_base.cpp include/config.h \
+ include/config.h include/window.h include/color.h include/utils.h \
+ include/types.h include/logger.h include/singleton.h \
+ include/singleton_base.h include/singleton_manager.h include/window.h \
+ include/utils.h include/window_factory.h include/software_window.h \
+ include/gl_window.h include/application_base.h include/local_timer.h
+obj/font_manager.o: src/font_manager.cpp include/file.h include/types.h \
+ include/logger.h include/singleton.h include/singleton_base.h \
+ include/singleton_manager.h include/font_manager.h include/font.h \
+ /usr/include/freetype2/ft2build.h \
+ /usr/include/freetype2/freetype/config/ftheader.h \
+ /usr/include/freetype2/freetype/freetype.h \
+ /usr/include/freetype2/freetype/config/ftconfig.h \
+ /usr/include/freetype2/freetype/config/ftoption.h \
+ /usr/include/freetype2/freetype/config/ftstdlib.h \
+ /usr/include/freetype2/freetype/fttypes.h \
+ /usr/include/freetype2/freetype/ftsystem.h \
+ /usr/include/freetype2/freetype/ftimage.h \
+ /usr/include/freetype2/freetype/fterrors.h \
+ /usr/include/freetype2/freetype/ftmoderr.h \
+ /usr/include/freetype2/freetype/fterrdef.h \
+ /usr/include/freetype2/freetype/ftglyph.h \
+ /usr/include/freetype2/freetype/ftoutln.h \
+ /usr/include/freetype2/freetype/fttrigon.h include/color.h \
+ include/utils.h include/logger.h
+obj/file.o: src/file.cpp include/file.h include/types.h
+obj/exceptions.o: src/exceptions.cpp include/exceptions.h include/types.h
+obj/team_manager.o: src/team_manager.cpp include/global_timer.h \
+ include/singleton.h include/singleton_base.h include/singleton_manager.h \
+ include/types.h include/team_manager.h include/geometry.h \
+ include/exceptions.h include/utils.h include/team.h include/spot.h \
+ include/color.h include/config.h include/window.h include/logger.h \
+ include/font_manager.h include/font.h /usr/include/freetype2/ft2build.h \
+ /usr/include/freetype2/freetype/config/ftheader.h \
+ /usr/include/freetype2/freetype/freetype.h \
+ /usr/include/freetype2/freetype/config/ftconfig.h \
+ /usr/include/freetype2/freetype/config/ftoption.h \
+ /usr/include/freetype2/freetype/config/ftstdlib.h \
+ /usr/include/freetype2/freetype/fttypes.h \
+ /usr/include/freetype2/freetype/ftsystem.h \
+ /usr/include/freetype2/freetype/ftimage.h \
+ /usr/include/freetype2/freetype/fterrors.h \
+ /usr/include/freetype2/freetype/ftmoderr.h \
+ /usr/include/freetype2/freetype/fterrdef.h \
+ /usr/include/freetype2/freetype/ftglyph.h \
+ /usr/include/freetype2/freetype/ftoutln.h \
+ /usr/include/freetype2/freetype/fttrigon.h
+obj/application.o: src/application.cpp include/window.h include/color.h \
+ include/utils.h include/types.h include/logger.h include/singleton.h \
+ include/singleton_base.h include/singleton_manager.h \
+ include/team_manager.h include/geometry.h include/exceptions.h \
+ include/team.h include/spot.h include/config.h include/window.h \
+ include/font_manager.h include/font.h /usr/include/freetype2/ft2build.h \
+ /usr/include/freetype2/freetype/config/ftheader.h \
+ /usr/include/freetype2/freetype/freetype.h \
+ /usr/include/freetype2/freetype/config/ftconfig.h \
+ /usr/include/freetype2/freetype/config/ftoption.h \
+ /usr/include/freetype2/freetype/config/ftstdlib.h \
+ /usr/include/freetype2/freetype/fttypes.h \
+ /usr/include/freetype2/freetype/ftsystem.h \
+ /usr/include/freetype2/freetype/ftimage.h \
+ /usr/include/freetype2/freetype/fterrors.h \
+ /usr/include/freetype2/freetype/ftmoderr.h \
+ /usr/include/freetype2/freetype/fterrdef.h \
+ /usr/include/freetype2/freetype/ftglyph.h \
+ /usr/include/freetype2/freetype/ftoutln.h \
+ /usr/include/freetype2/freetype/fttrigon.h include/application.h \
+ include/application_base.h include/local_timer.h include/global_timer.h \
+ include/ground.h
+obj/spot.o: src/spot.cpp include/ground.h include/color.h include/utils.h \
+ include/types.h include/window.h include/logger.h include/singleton.h \
+ include/singleton_base.h include/singleton_manager.h include/geometry.h \
+ include/exceptions.h include/config.h include/config.h include/spot.h
+obj/local_timer.o: src/local_timer.cpp include/local_timer.h
+obj/window.o: src/window.cpp include/logger.h include/singleton.h \
+ include/singleton_base.h include/singleton_manager.h include/types.h \
+ include/utils.h include/window.h include/color.h include/utils.h \
+ include/logger.h
+obj/font.o: src/font.cpp include/utils.h include/types.h include/tokenizer.h \
+ include/font.h /usr/include/freetype2/ft2build.h \
+ /usr/include/freetype2/freetype/config/ftheader.h \
+ /usr/include/freetype2/freetype/freetype.h \
+ /usr/include/freetype2/freetype/config/ftconfig.h \
+ /usr/include/freetype2/freetype/config/ftoption.h \
+ /usr/include/freetype2/freetype/config/ftstdlib.h \
+ /usr/include/freetype2/freetype/fttypes.h \
+ /usr/include/freetype2/freetype/ftsystem.h \
+ /usr/include/freetype2/freetype/ftimage.h \
+ /usr/include/freetype2/freetype/fterrors.h \
+ /usr/include/freetype2/freetype/ftmoderr.h \
+ /usr/include/freetype2/freetype/fterrdef.h \
+ /usr/include/freetype2/freetype/ftglyph.h \
+ /usr/include/freetype2/freetype/ftoutln.h \
+ /usr/include/freetype2/freetype/fttrigon.h include/color.h \
+ include/utils.h
+obj/ground.o: src/ground.cpp include/ground.h include/color.h include/utils.h \
+ include/types.h include/window.h include/logger.h include/singleton.h \
+ include/singleton_base.h include/singleton_manager.h include/geometry.h \
+ include/exceptions.h
+obj/main.o: src/main.cpp include/application.h include/application_base.h \
+ include/local_timer.h include/window.h include/color.h include/utils.h \
+ include/types.h include/logger.h include/singleton.h \
+ include/singleton_base.h include/singleton_manager.h \
+ include/global_timer.h
+obj/gl_window.o: src/gl_window.cpp include/exceptions.h include/types.h \
+ include/gl_window.h include/window.h include/color.h include/utils.h \
+ include/logger.h include/singleton.h include/singleton_base.h \
+ include/singleton_manager.h

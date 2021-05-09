@@ -1,0 +1,6 @@
+# Global variables
+PROJECT_NAME         = virtual_battle
+PROJECT_VERSION      = 1.1.0
+PROJECT_DESCRIPTION  = battle simulator
+PROJECT_AUTHORS      = Nicolas Lermé
+PROJECT_LAST_RELEASE = `date`
