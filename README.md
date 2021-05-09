@@ -1,10 +1,10 @@
 Presentation
 ------------
-VirtualBattle is a battle simulator based on Finite State Machines (FSM) distributed under LGPL license. More precisely, this software simulates battle between an arbitrary number of teams composed of spots. Each spot is an entity represented by various attributes (direction, velocity, position, life level, weapon level, etc.). At the beginning, the spots of each team are Gaussian-distributed and their attributes are uniformly selected at random. Then, the state of any spot is updated according to the FSM. The simulation ends when spots do not have opponent so fight against. The software is programmed in C++ and requires the following libraries: SDL, OpenGL, glut, GLEW and freetype.
+VirtualBattle is a battle simulator based on Finite State Machines (FSM) distributed under LGPL license. More precisely, this software simulates battle between an arbitrary number of teams composed of spots. Each spot is an entity represented by various attributes (direction, velocity, position, life level, weapon level, etc.). At the beginning, the spots of each team are Gaussian-distributed and their attributes are uniformly selected at random. Then, the state of any spot is updated according to the FSM. The simulation ends when spots do not have opponent so fight against. The geometry of the battle ground also impacts the velocity of any spot. The battle ground is randomly generated as a superposition of Gaussians. The software is programmed in C++ and requires the following libraries: SDL, OpenGL, glut, GLEW and freetype. A screenshot extracted from a simulation is given below:
 
-<figure class="video_container">
-  <iframe src="https://www.youtube.com/watch?v=GFLOQ4pWR-g" frameborder="0" allowfullscreen="true"> </iframe>
-</figure>
+![Example of simulation](https://i.ibb.co/yqJyWtg/foobar.png)
+
+A **video** of a simulation (without ground generation) can also be consulted [here](https://www.youtube.com/watch?v=GFLOQ4pWR-g).
 
 Compiling
 ---------
