@@ -111,7 +111,7 @@ void CFont::_build_display_list( FT_Face face, char character )
 
 	for( int j(0); j<height; j++ )
 		for( int i(0); i<width; i++ )
-			expanded_data[2*(i+j*width)] = expanded_data[2*(i+j*width)+1] = (i >= bitmap.width || j >= bitmap.rows) ? 0 : bitmap.buffer[i+bitmap.width*j];
+			expanded_data[2*(i+j*width)] = expanded_data[2*(i+j*width)+1] = (i >= int(bitmap.width) || j >= int(bitmap.rows)) ? 0 : bitmap.buffer[i+bitmap.width*j];
 
 	glBindTexture(GL_TEXTURE_2D, m_Textures[int(character)]);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);

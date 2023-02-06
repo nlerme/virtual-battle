@@ -17,24 +17,30 @@ OBJ       = $(SRC:%.$(FILES_EXT)=$(OBJ_DIR)/%.o)
 all: header depend $(OBJ) $(TARGET) footer
 
 header:
-	@echo -e "-----------------------------------------------------------------------------"
-	@echo -e "$(PROJECT_NAME) v$(PROJECT_VERSION) - $(PROJECT_DESCRIPTION)"
-	@echo -e "Authors: $(PROJECT_AUTHORS)"
-	@echo -e "Last release: $(PROJECT_LAST_RELEASE)"
+	@echo "-----------------------------------------------------------------------------"
+	@echo "Project name : $(PROJECT_NAME)"
+	@echo "Description  : $(PROJECT_DESCRIPTION)"
+	@echo "License      : $(PROJECT_LICENSE)"
+	@echo "Version      : $(PROJECT_VERSION)"
+	@echo "Authors      : $(PROJECT_AUTHORS)"
+	@echo "Last release : $(PROJECT_LAST_RELEASE)"
 	@echo -e "-----------------------------------------------------------------------------\n"
 
 depend:
+ifeq ("$(wildcard $(OBJ_DIR))","")
+	@mkdir $(OBJ_DIR)
+endif
 	@echo -n "+ generating dependencies : "
 ifneq ($(strip $(SRC)),)
 	@$(CXX) $(INC_DIR) -MM $(SRC:%=$(SRC_DIR)/%) \
 	| sed -e 's:^[^ ]:$(OBJ_DIR)/&:' > Makefile.depend
 endif
-	@echo "ok"
+	@echo "OK"
 
 $(OBJ_DIR)/%.o: $(SRC_DIR)/%.$(FILES_EXT)
 	@echo -n "+ compiling $(notdir $@) : "
 	@$(CXX) $(CXXFLAGS) $(LDFLAGS) $(INC_DIR) -c $< -o $@
-	@echo "ok"
+	@echo "OK"
 
 $(TARGET): $(OBJ)
 	@echo -n "+ building $@ : "
@@ -43,8 +49,8 @@ $(TARGET): $(OBJ)
 
 clean: clean_doc
 	@echo -n "+ deleting binaries : "
-	@rm -f $(OBJ_DIR)/*.o $(TARGET)
-	@echo "ok"
+	@\rm -rf $(OBJ_DIR) $(TARGET)
+	@echo "OK"
 
 doc:
 	@$(MAKE) -C $(DOC_DIR) -s

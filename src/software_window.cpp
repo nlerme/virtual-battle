@@ -61,7 +61,7 @@ void CSoftwareWindow::fill_rectangle( const int x, const int y, const int width,
 void CSoftwareWindow::draw_circle( const int xc, const int yc, const int radius, const color4f & c )
 {
 	int xf(sqrtf(2.0f)/2.0f*radius);
-	register int x, y;
+	int x, y;
 
 
 	for( x=0; x<=xf; x++ )
@@ -82,7 +82,7 @@ void CSoftwareWindow::fill_circle( const int xc, const int yc, const int radius,
 
 void CSoftwareWindow::draw_line( const int _x1, const int _y1, const int _x2, const int _y2, const color4f & c )
 {
-	register int x1(_x1), x2(_x2), y1(_y1), y2(_y2), x, y;
+	int x1(_x1), x2(_x2), y1(_y1), y2(_y2), x, y;
 	float pente, yflt, xflt;
 
 

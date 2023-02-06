@@ -1,6 +1,7 @@
-# Global variables
-PROJECT_NAME         = virtual_battle
+#--- Variables --------------------------------------------------------------------------------------------
+PROJECT_NAME         = virtual-battle
 PROJECT_VERSION      = 1.1.0
-PROJECT_DESCRIPTION  = battle simulator
+PROJECT_DESCRIPTION  = Particles battle simulator based on finite state machines
 PROJECT_AUTHORS      = Nicolas Lermé
+PROJECT_LICENSE      = LGPL-v3
 PROJECT_LAST_RELEASE = `date`
